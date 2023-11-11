@@ -1,0 +1,19 @@
+#Udemy_Course: Master Python by building 100 projects in 100 days
+#Project_2 : Tip Calculator
+# by, Md Ibrahim Mamun
+#-----------------------------------
+print("Welcome to the tip calculator.")
+
+bill = float(input("What was the total bill? $"))
+
+percentage = input("What percentage tip would you like to give? 10, 20, or 15? ")
+
+percentage = float(percentage)
+
+people = input("How many people to split the bill? ")
+
+people = float(people)
+
+result = (bill + ( bill * percentage / 100 ) ) / people
+
+print(f"Each person should pay: ${round(result,2)}")
